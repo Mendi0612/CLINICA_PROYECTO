@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registro de Usuario</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin:0;
+            background:#f4f4f4;
+        }
+
+        .menu{
+            background:#eaeaea;
+            padding:15px 40px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        .menu a{
+            text-decoration:none;
+            margin-left:25px;
+            color:#333;
+            font-weight:bold;
+        }
+
+        .contenedor{
+            background:white;
+            width:400px;
+            margin:60px auto;
+            padding:30px;
+            border-radius:10px;
+            box-shadow:0px 0px 10px rgba(0,0,0,0.1);
+            text-align:center;
+        }
+
+        input{
+            width:90%;
+            padding:10px;
+            margin:10px 0;
+            border-radius:5px;
+            border:1px solid #ccc;
+        }
+
+        button{
+            width:95%;
+            padding:10px;
+            border:none;
+            border-radius:5px;
+            background-color:#3498db;
+            color:white;
+            font-size:16px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background-color:#2980b9;
+        }
+
+        .error{
+            color:red;
+        }
+
+        .ok{
+            color:green;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="menu">
+    <div><b>Clinica_Proyecto</b></div>
+</div>
+
+<div class="contenedor">
+    <h2>Registro de Usuario</h2>
+
+    <form method="POST">
+
+        <input type="text" name="nombre" placeholder="Nombres " required>
+
+        <input type="text" name="apellido" placeholder="Apellidos " required>
+
+        <input type="text" name="Documento" placeholder="Documento" required>
+
+        <input type="email" name="correo" placeholder="Correo electrónico" required>
+
+        <input type="number" name="edad" placeholder="Edad" required>
+
+        <input type="password" name="password" placeholder="Contraseña" required>
+
+        <input type="password" name="confirmar" placeholder="Confirmar contraseña" required>
+
+        <button type="submit">Registrarse</button>
+    </form>
+
+     {% if mensaje %}
+        <p class="ok">{{mensaje}}</p>
+    {% endif %}
+
+    {% if error %}
+        <p class="error">{{error}}</p>
+    {% endif %}
+
+</div>
+
+</body>
+</html>

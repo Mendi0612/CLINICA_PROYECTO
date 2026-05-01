@@ -1,0 +1,83 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    background:#f4f4f4;
+    }
+
+    /* MENU */
+.menu{
+    background:#eaeaea;
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    }
+
+    .menu a{
+            text-decoration:none;
+            margin-left:25px;
+            color:#333;
+            font-weight:bold;
+        }
+
+        /* SECCION PRINCIPAL */
+        .principal{
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            padding:80px;
+            background:white;
+        }
+
+        .texto{
+            width:50%;
+        }
+
+        .texto h1{
+            font-size:45px;
+            margin-bottom:20px;
+        }
+
+        .texto p{
+            color:#555;
+            line-height:1.6;
+        }
+
+        .contenedor{
+            background:white;
+            width:700px;
+            margin:40px auto;
+            padding:30px;
+            border-radius:10px;
+            box-shadow:0px 0px 10px rgba(0,0,0,0.1);
+        }
+
+        h2{
+            color:#333;
+        }
+
+        ul{
+            line-height:1.8;
+        }
+        /* ITEMS DE CITAS */
+        li{
+            background:#f1f1f1;
+            margin:10px 0;
+            padding:10px;
+        border-radius:8px;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        }
+
+        /* ESTADOS DE LAS CITAS */
+        .disponible{
+            color:green;
+            font-weight:bold;
+        }
+
+        .no_disponible{
+        color:red;
+        font-weight:bold;
+        }
+
